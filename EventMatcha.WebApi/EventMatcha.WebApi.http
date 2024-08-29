@@ -1,0 +1,6 @@
+@EventMatcha.WebApi_HostAddress = http://localhost:5188
+
+GET {{EventMatcha.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

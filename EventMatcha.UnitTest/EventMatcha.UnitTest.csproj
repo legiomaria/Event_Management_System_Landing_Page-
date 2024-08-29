@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.5.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="NetArchTest.Rules" Version="1.3.2" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventMatcha.ApiModels\EventMatcha.ApiModels.csproj" />
+    <ProjectReference Include="..\EventMatcha.Application\EventMatcha.Application.csproj" />
+    <ProjectReference Include="..\EventMatcha.Domain\EventMatcha.Domain.csproj" />
+    <ProjectReference Include="..\EventMatcha.Infrastructure\EventMatcha.Infrastructure.csproj" />
+    <ProjectReference Include="..\EventMatcha.Presentation\EventMatcha.Presentation.csproj" />
+    <ProjectReference Include="..\EventMatcha.Shared\EventMatcha.Shared.csproj" />
+    <ProjectReference Include="..\EventMatcha.WebApi\EventMatcha.WebApi.csproj" />
+  </ItemGroup>
+
+</Project>
